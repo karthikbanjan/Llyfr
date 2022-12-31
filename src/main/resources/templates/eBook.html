@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Llyfr</title>
+    <meta name="description" content="eBook Repository by Karthik Banjan">
+    <link rel="stylesheet" th:href="@{bootstrap/css/bootstrap.min.css}">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic&amp;display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700&amp;display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body id="page-top" data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="77">
+    <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav">
+        <div class="container"><a class="navbar-brand" href="index">Llyfr</a><button data-bs-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-bs-target="#navbarResponsive" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu"><i class="fa fa-bars"></i></button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item nav-link"><a class="nav-link" href="#contact">contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <header class="masthead" th:style="'background-image:url(img/eBook-bg.jpg);'">
+        <div class="intro-body">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <h1 class="brand-heading">EBook</h1><a class="btn btn-link btn-circle" role="button" href="#eBook"><i class="fa fa-angle-double-down animated"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main id="eBook" class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col"><img class="img-thumbnail mx-auto d-block" th:src="@{${ebook.getCoverImageLink()}}" alt="eBook cover"></div>
+                <div class="col">
+                    <h2 class="text-center" th:text="${ebook.getTitle()}"></h2>
+                    <p class="lead text-muted">Author</p>
+                    <p class="text-center" th:text="${ebook.getAuthor()}"></p>
+                    <p class="lead text-muted">Genre</p>
+                    <p class="text-center" th:text="${ebook.getGenre()}"></p>
+                    <p class="lead text-muted">Publication</p>
+                    <p class="text-center" th:text="${ebook.getPublisher()}"></p>
+                    <p class="lead text-muted">ISBN</p>
+                    <p class="text-center" th:text="${ebook.getIsbn()}"></p>
+                    <p class="lead text-muted">Language</p>
+                    <p class="text-center" th:text="${ebook.getLanguage()}"></p>
+                    <p class="lead text-muted">Download</p>
+                    <div class="col-md-12 text-center">
+                        <a class="btn btn-primary" role="button" th:href="@{${ebook.getDownloadLink()}}">Download</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="text-center content-section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Contact Me</h2>
+                    <p>Hope you liked this project!</p>
+                    <ul class="list-inline banner-social-buttons">
+                        <li class="list-inline-item"><a class="btn btn-outline-primary btn-lg" href="https://www.linkedin.com/in/karthikbanjan/" target="_blank" style="margin-right: 0px;">&nbsp;<i class="fa fa-linkedin fa-fw"></i><span class="network-name">&nbsp; LinkedIN</span></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-primary btn-lg" href="https://twitter.com/karthikbanjan" target="_blank">&nbsp;<i class="fa fa-twitter fa-fw"></i><span class="network-name">&nbsp;Twitter</span></a></li>
+                        <li class="list-inline-item"><a class="btn btn-outline-primary btn-lg" href="https://github.com/karthikbanjan" target="_blank">&nbsp;<i class="fa fa-github fa-fw"></i><span class="network-name">&nbsp;github</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="text-center bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a class="link-light" href="https://github.com/karthikbanjan/Web-Quiz-Engine" target="_blank">Web Quiz Engine</a></li>
+                        <li class="list-inline-item"><a class="link-light" href="https://github.com/karthikbanjan/Code-Sharing-Platform" target="_blank">Code Sharing Platform</a></li>
+                        <li class="list-inline-item"><a class="link-light" href="https://github.com/karthikbanjan/Car-Rental-System" target="_blank">Car Rental System</a></li>
+                    </ul>
+                    <p class="text-muted mb-0">Copyright © 2022 Llyfr</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script th:src="@{js/grayscale.js}"></script>
+</body>
+
+</html>
