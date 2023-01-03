@@ -9,6 +9,15 @@
 An eBook repository built using Bootstrap and Spring Boot. It has both view and api functionalities. Uses PostgreSQL for database. This is also part of my 7th semester mini-project.
 
 
+## Preview
+
+![image](https://user-images.githubusercontent.com/92287364/210415147-da1787cb-4f95-4302-8dd9-b45fee73dbe4.png)
+![image](https://user-images.githubusercontent.com/92287364/210415196-fb27b5e3-9a18-4503-b79d-c4c551d2173f.png)
+![image](https://user-images.githubusercontent.com/92287364/210415216-a5499717-7a4d-4a99-922c-9bc0debbfeca.png)
+![image](https://user-images.githubusercontent.com/92287364/210415245-ceb243d1-2b70-4d12-b1ac-0371c262105c.png)
+![image](https://user-images.githubusercontent.com/92287364/210415271-c22a8280-5725-4938-af26-360da2414eff.png)
+![image](https://user-images.githubusercontent.com/92287364/210415292-49f07fe9-da75-40a3-bec8-dd9908ed74ec.png)
+![image](https://user-images.githubusercontent.com/92287364/210415321-3875f9cc-6e3e-42f1-a819-b7b9ded377b1.png)
 
 
 ## API Reference
